@@ -1,0 +1,9 @@
+/*! \mainpage %skiros_lib_tools
+ * This package is a collection of tools and utilities that 
+ * are relevant and useful for the underlying SkiROS system.
+ *
+ * One example of this is the skiros_tools::ActionClientWrapper class, 
+ * that simplifies intantiating an action client, 
+ * and sending goals to the action server it connects to.
+ *
+ */

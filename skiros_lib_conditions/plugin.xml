@@ -1,0 +1,52 @@
+<library path="libskiros_lib_conditions">
+    <class  name="ObjectAtLocation" type="skiros::condition::ObjectAtLocation" base_class_type="skiros::condition::ConditionBase">
+      <description>
+       A condition
+      </description>
+    </class>
+    <class  name="RobotAtLocation" type="skiros::condition::RobotAtLocation" base_class_type="skiros::condition::ConditionBase">
+      <description>
+       A condition
+      </description>
+    </class>
+    <class  name="Holding" type="skiros::condition::Holding" base_class_type="skiros::condition::ConditionBase">
+      <description>
+       A condition
+      </description>
+    </class>
+    <class  name="Carrying" type="skiros::condition::Carrying" base_class_type="skiros::condition::ConditionBase">
+      <description>
+       A condition
+      </description>
+    </class>
+    <class  name="ObjectInCell" type="skiros::condition::ObjectInCell" base_class_type="skiros::condition::ConditionBase">
+      <description>
+       A condition
+      </description>
+    </class>
+    <class  name="InKit" type="skiros::condition::InKit" base_class_type="skiros::condition::ConditionBase">
+      <description>
+       A condition
+      </description>
+    </class>
+    <class  name="CellInKit" type="skiros::condition::CellInKit" base_class_type="skiros::condition::ConditionBase">
+      <description>
+       A condition
+      </description>
+    </class>
+    <class  name="EmptyHanded" type="skiros::condition::EmptyHanded" base_class_type="skiros::condition::ConditionBase">
+      <description>
+       A condition
+      </description>
+    </class>
+    <class  name="LocationEmpty" type="skiros::condition::LocationEmpty" base_class_type="skiros::condition::ConditionBase">
+      <description>
+       A condition
+      </description>
+    </class>
+    <class  name="FitsIn" type="skiros::condition::FitsIn" base_class_type="skiros::condition::ConditionBase">
+      <description>
+       A condition
+      </description>
+    </class>
+</library>

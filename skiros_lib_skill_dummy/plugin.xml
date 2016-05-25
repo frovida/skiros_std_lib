@@ -1,0 +1,17 @@
+<library path="libskiros_lib_skill_dummy">
+    <class  name="drive_fake" type="skiros_skill::DriveFake" base_class_type="skiros_skill::SkillBase">
+      <description>
+      Fake driving skill
+      </description>
+    </class>
+    <class name="pick_fake" type="skiros_skill::PickFake" base_class_type="skiros_skill::SkillBase">
+      <description>
+      Fake picking skill
+      </description>
+    </class>
+    <class name="place_fake" type="skiros_skill::PlaceFake" base_class_type="skiros_skill::SkillBase">
+      <description>
+      Fake placing skill
+      </description>
+    </class>
+</library>

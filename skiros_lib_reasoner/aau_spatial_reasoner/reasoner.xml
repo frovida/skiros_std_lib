@@ -1,0 +1,7 @@
+<library path="libaau_spatial_reasoner">
+  <class name="AauSpatialReasoner" type="skiros_reasoner::AauSpatialReasoner" base_class_type="skiros_wm::DiscreteReasoner">
+    <description>
+      AAU spatial reasoner for SkiROS world model
+    </description>
+  </class>
+</library>

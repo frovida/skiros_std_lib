@@ -1,0 +1,32 @@
+<package>
+  <name>skiros_task_planner_plugin</name>
+  <version>0.0.1</version>
+  <description>
+      Task planner for the task manager node
+  </description>
+
+  <maintainer email="m.crosby@ed.ac.uk">Matthew Crosby</maintainer>
+  <license>BSD</license>
+  <!-- <url type="website"></url> -->
+  <author email="m.crosby@ed.ac.uk"> Matthew Crosby</author>
+
+  <build_depend>cmake_modules</build_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>skiros_task</build_depend>
+
+  <run_depend>pluginlib</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>message_generation</run_depend>
+  <run_depend>skiros_task</run_depend>
+
+
+  <export>
+      <skiros_task plugin="${prefix}/plugin.xml"/>
+  </export>
+
+</package>

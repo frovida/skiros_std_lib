@@ -1,0 +1,16 @@
+<package>
+  <name>skiros_std_lib</name>
+  <version>0.1.0</version>
+  <description>
+	Standard plugins for SkiROS framework
+  </description>
+
+  <maintainer email="francesco@m-tech.aau.dk">Francesco Rovida</maintainer>
+  <license>BSD</license>
+  <author email="francesco@m-tech.aau.dk">Francesco Rovida</author>
+  <author>Francesco Rovida</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+   <export>
+  </export>
+</package>

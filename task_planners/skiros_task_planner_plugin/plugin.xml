@@ -1,0 +1,7 @@
+<library path="libtask_planner">
+  <class type="skiros_task::TaskPlanner" base_class_type="skiros_task::ExternalInterface">
+    <description>
+        Interface to the task planner
+    </description>
+  </class>
+</library>

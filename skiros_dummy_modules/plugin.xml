@@ -1,0 +1,7 @@
+<library path="libskiros_dummy_modules">
+<class name="locate_fake" type="skiros::module::LocateFake" base_class_type="skiros::ModuleBase">
+  <description>
+  Fake locate skill
+  </description>
+</class>
+</library>
