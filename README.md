@@ -4,9 +4,11 @@
 
 Last readME update: 25/05/2016  
 
+**Compatibility**: Has been tested with Ubuntu 14.04 and ROS Indigo.
+
 The repository is a collection of plugins for the SkiROS system, for more information refer to the SkiROS package readME.  
 
-This collection of plugins provide SkiROS with a minimal set to try out the framework. 
+This repository provide SkiROS with a minimal collection of plugins to try out the framework. In particular, it is provided a task planner, a reasoner for spatial relations, a set of fake skills (drive, pick and place) and a fake module to locate objects.
 
 ### Included (meta)packages 
 * **skiros_std_lib**: holds launch file to launch a skiros with fake skills and an example world model. script to install dependencies. (meta-package)  
@@ -17,14 +19,18 @@ This collection of plugins provide SkiROS with a minimal set to try out the fram
 * **utils**: holds support packages
 
 ### Dependencies
-* [**skiros**](git@git.rvmi.aau.dk:aau-projects/skiros.git) 
-* [**downward**](http://gki.informatik.uni-freiburg.de/tools/tfd/downloads.html) task planner
+* [**skiros**](git@git.rvmi.aau.dk:aau-projects/skiros.git) core framework
+* [**fast-downward**](http://gki.informatik.uni-freiburg.de/tools/tfd/downloads.html) task planner
 
 ### Install
-Run the script "skiros_std_lib/scripts/install_dependencies.sh directory" where "directory" should specify the install directory
+
+To install the fast-downward planner, user can run the script "skiros_std_lib/scripts/install_dependencies.sh", specifing the folder of installation (note: this should never change afterwards).
+
+The packages can be compiled using catkin.
 
 ### Quick start
-These plugins can be executed into SkiROS. For an example on how to launch it, refer to the SkiROS package.
+These plugins can be loaded into the SkiROS framework. To launch the system:
 
+* roslaunch skiros_std_lib skiros_system_fake_skills.launch
 
 
