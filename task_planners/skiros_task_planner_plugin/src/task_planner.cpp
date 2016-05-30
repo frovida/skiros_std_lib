@@ -11,7 +11,7 @@
 #include "skiros_common/utility.h"
 #include "skiros_world_model/utility.h"
 #include "skiros_msgs/TmGoal.h"
-#include <skiros_task/pddl.h>
+#include <skiros_task/planner_interface.h>
     
 using namespace skiros_config::owl;
 using namespace skiros_wm;
@@ -38,7 +38,7 @@ namespace skiros_task
         ros::ServiceServer test_;
         //!< Planner ptr
         PlannerInterfacePtrType planner_ptr_;
-        PddlProblem pddl_;
+        PlannerInterface pddl_;
     public:
         TaskPlanner() {}
         ~TaskPlanner() {}
