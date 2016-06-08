@@ -8,7 +8,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 0 0 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
         </properties>
     </element>
     <relation subject="Scene-0" predicate="contain" object="Location-1" />
@@ -86,7 +86,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 123 20 174 71 225 122 232 63 0 123 93 12 5 105 29 129 0 72 225 122 20 174 71 209 191 0 123 93 12 5 105 29 129 0 123 20 174 71 225 122 180 191 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 224 63 0 123 93 12 5 105 29 129 0 102 102 102 102 102 102 230 63 0 123 93 12 5 105 29 129 0 205 204 204 204 204 204 204 63 </Size>
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
             <hasA name="" state="2" spec_type="7" array_size="7" ash="3766795652327464663" payload_length="137">7 0 0 0 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 97 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 98 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 99 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 100 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 101 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 102 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 103 </hasA>
         </properties>
     </element>
@@ -107,7 +107,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 123 20 174 71 225 122 196 63 0 123 93 12 5 105 29 129 0 113 61 10 215 163 112 205 191 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 185 63 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
             <partReference name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 97 108 116 101 114 110 97 116 111 114 </partReference>
         </properties>
     </element>
@@ -121,7 +121,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 123 20 174 71 225 122 180 191 0 123 93 12 5 105 29 129 0 113 61 10 215 163 112 205 191 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 185 63 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
             <partReference name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 99 111 109 112 114 101 115 115 111 114 </partReference>
         </properties>
     </element>
@@ -135,7 +135,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 184 30 133 235 81 184 190 191 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 0 0 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 185 63 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
         </properties>
     </element>
     <relation subject="CellC-10" predicate="relatedTo" object="Scene-0" />
@@ -148,7 +148,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 184 30 133 235 81 184 190 63 0 123 93 12 5 105 29 129 0 217 206 247 83 227 165 155 191 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 185 63 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
         </properties>
     </element>
     <relation subject="CellD-11" predicate="relatedTo" object="Scene-0" />
@@ -161,7 +161,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 184 30 133 235 81 184 190 63 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 201 63 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 185 63 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
             <partReference name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="31">1 0 0 0 0 215 222 118 62 176 88 70 52 14 0 0 0 101 110 103 105 110 101 95 115 117 112 112 111 114 116 </partReference>
         </properties>
     </element>
@@ -175,7 +175,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 184 30 133 235 81 184 190 191 0 123 93 12 5 105 29 129 0 195 245 40 92 143 194 197 63 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 185 63 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
         </properties>
     </element>
     <relation subject="CellF-13" predicate="relatedTo" object="Scene-0" />
@@ -188,7 +188,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 0 0 0 123 93 12 5 105 29 129 0 41 92 143 194 245 40 204 63 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 208 63 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
         </properties>
     </element>
     <relation subject="CellG-14" predicate="relatedTo" object="Scene-0" />
@@ -200,7 +200,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 123 20 174 71 225 122 232 63 0 123 93 12 5 105 29 129 0 113 61 10 215 163 112 205 63 0 123 93 12 5 105 29 129 0 123 20 174 71 225 122 180 191 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 224 63 0 123 93 12 5 105 29 129 0 102 102 102 102 102 102 230 63 0 123 93 12 5 105 29 129 0 205 204 204 204 204 204 204 63 </Size>
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
             <hasA name="" state="2" spec_type="7" array_size="7" ash="3766795652327464663" payload_length="137">7 0 0 0 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 97 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 98 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 99 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 100 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 101 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 102 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 103 </hasA>
         </properties>
     </element>
@@ -221,7 +221,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 123 20 174 71 225 122 196 63 0 123 93 12 5 105 29 129 0 113 61 10 215 163 112 205 191 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 185 63 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
             <partReference name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 97 108 116 101 114 110 97 116 111 114 </partReference>
         </properties>
     </element>
@@ -235,7 +235,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 123 20 174 71 225 122 180 191 0 123 93 12 5 105 29 129 0 113 61 10 215 163 112 205 191 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 185 63 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
             <partReference name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 99 111 109 112 114 101 115 115 111 114 </partReference>
         </properties>
     </element>
@@ -249,7 +249,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 184 30 133 235 81 184 190 191 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 0 0 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 185 63 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
         </properties>
     </element>
     <relation subject="CellC-18" predicate="relatedTo" object="Scene-0" />
@@ -262,7 +262,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 184 30 133 235 81 184 190 63 0 123 93 12 5 105 29 129 0 217 206 247 83 227 165 155 191 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 185 63 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
         </properties>
     </element>
     <relation subject="CellD-19" predicate="relatedTo" object="Scene-0" />
@@ -275,7 +275,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 184 30 133 235 81 184 190 63 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 201 63 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 185 63 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
             <partReference name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="31">1 0 0 0 0 215 222 118 62 176 88 70 52 14 0 0 0 101 110 103 105 110 101 95 115 117 112 112 111 114 116 </partReference>
         </properties>
     </element>
@@ -289,7 +289,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 184 30 133 235 81 184 190 191 0 123 93 12 5 105 29 129 0 195 245 40 92 143 194 197 63 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 185 63 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
         </properties>
     </element>
     <relation subject="CellF-21" predicate="relatedTo" object="Scene-0" />
@@ -302,7 +302,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 0 0 0 123 93 12 5 105 29 129 0 41 92 143 194 245 40 204 63 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 208 63 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
         </properties>
     </element>
     <relation subject="CellG-22" predicate="relatedTo" object="Scene-0" />
@@ -566,7 +566,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 240 63 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 241 63 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
             <nrParts name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="18">1 0 0 0 0 215 222 118 62 176 88 70 52 1 0 0 0 53 </nrParts>
             <partReference name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 99 111 109 112 114 101 115 115 111 114 </partReference>
             <sequenceNr name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="18">1 0 0 0 0 215 222 118 62 176 88 70 52 1 0 0 0 48 </sequenceNr>
@@ -941,7 +941,7 @@
             <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 240 63 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 241 63 </Position>
             <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
             <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
-            <SpatialReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </SpatialReasoner>
+            <DiscreteReasoner name="Spatial reasoner name" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
             <nrParts name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="18">1 0 0 0 0 215 222 118 62 176 88 70 52 1 0 0 0 53 </nrParts>
             <partReference name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 97 108 116 101 114 110 97 116 111 114 </partReference>
             <sequenceNr name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="18">1 0 0 0 0 215 222 118 62 176 88 70 52 1 0 0 0 49 </sequenceNr>

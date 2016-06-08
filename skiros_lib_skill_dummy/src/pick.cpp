@@ -141,25 +141,21 @@ int Pick::preSense()
         }
     }
 
-    /// Look for object, if not found try to locate it
+    /// locate object
     objObject = getParamHandle()->getParamValue<Element>("Object");
-    if(objObject.id()==-1)
+    if(objObject.id()<0)
     {
+        skiros::Module locate(getModulesHandler(), "locate_fake", objObject.type());
+        locate.setParam("Camera", camera_up_);
+        locate.setParam("Container", container_);
+        locate.exe();
+        locate.waitResult();
         v = getWorldHandle()->getChildElements(container_,"", objObject.type());
-        if(v.size()<=0)
-        {
-            skiros::Module locate(getModulesHandler(), "locate_fake", objObject.type());
-            locate.setParam("Camera", camera_up_);
-            locate.setParam("Container", container_);
-            locate.exe();
-            locate.waitResult();
-            v = getWorldHandle()->getChildElements(container_,"", objObject.type());
-        }
-        if(v.size())
-        {
-            objObject = v[0];
-            getParamHandle()->specify("Object", objObject);
-        }
+    }
+    if(v.size())
+    {
+        objObject = v[0];
+        getParamHandle()->specify("Object", objObject);
     }
     return 1;
 }

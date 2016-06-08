@@ -75,7 +75,8 @@ public:
          */
     virtual boost::any getData(skiros_wm::Element & e, std::string  get_code="") override;
     virtual void onAddProperties(skiros_wm::Element& e) override;
-    skiros_wm::ReasonerDataMap extractOwlData(skiros_wm::Element & e) override;
+    virtual void onRemoveProperties(skiros_wm::Element& e) override;
+    virtual skiros_wm::ReasonerDataMap extractOwlData(skiros_wm::Element & e) override;
 private:
     void publishObjectMarker(ros::Publisher & marker_pub, TfPubData & obj);
     std::list<TfPubData> getTfListRecursive(skiros_wm::Element root, std::string frame_id, skiros_wm::owl::WorldModel * model);

@@ -3,9 +3,7 @@
   <arg name="debug" default="false"/>
   <arg name="save_log" default="false"/>
   <arg name="only_robot" default="false"/>
-  <arg name="double_task_mgr" default="false"/>
 	<arg name="scene_name" default="enterprise_scene.xml"/>
-	<arg name="fake_wm" default="false"/>
   <arg name="workspace_folder" default="$(find skiros_std_lib)"/>
   <!-- NOTE: aau_stamina_robot for the ur10 robot in aau, stamina_robot for the fanuc robot in PSA -->
   <arg name="robot_name" default="stamina_robot"/>
@@ -14,9 +12,7 @@
 	<include unless="$(arg only_robot)" file="$(find skiros)/launch/skiros_task_and_wm.launch">
 		<arg name="debug" value="$(arg debug)"/>
 		<arg name="save_log" value="$(arg save_log)"/>
-  	<arg name="double_task_mgr" default="$(arg double_task_mgr)"/>
 		<arg name="scene_name" default="$(arg scene_name)"/>
-		<arg name="fake_wm" default="$(arg fake_wm)"/>
 		<arg name="workspace_folder" value="$(arg workspace_folder)"/>
   </include>
 

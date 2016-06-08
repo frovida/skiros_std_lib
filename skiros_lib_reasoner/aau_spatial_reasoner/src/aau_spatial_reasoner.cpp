@@ -50,6 +50,16 @@ namespace skiros_reasoner
       if(!e.hasProperty(data::PublishTf)) e.addProperty(data::PublishTf, true);
     }
 
+    void AauSpatialReasoner::onRemoveProperties(skiros_wm::Element& e)
+    {
+        e.removeProperty(data::Size);
+        e.removeProperty(data::Position);
+        e.removeProperty(data::Orientation);
+        e.removeProperty(data::PublishTf);
+        e.removeProperty(data::BaseFrameId);
+        e.removeProperty(data::FrameId);
+    }
+
     bool AauSpatialReasoner::storeData(skiros_wm::Element  & e, boost::any any, std::string  set_code)
     {
       addProperties(e);
@@ -260,7 +270,12 @@ namespace skiros_reasoner
             //TODO: get from file name
             //return boost::any(whatever);
         }
-        else throw std::invalid_argument("[AauSpatialReasoner::getData] Impossible to get specified data.");
+        else
+        {
+            std::stringstream ss;
+            ss << "[AauSpatialReasoner::getData] Impossible to get specified data: " << get_code << " from element: " << e.printState();
+            throw std::invalid_argument(ss.str().c_str());
+        }
     }
 
     ReasonerDataMap AauSpatialReasoner::extractOwlData(skiros_wm::Element & e)
@@ -495,7 +510,8 @@ namespace skiros_reasoner
             child = pair.second;
             try
             {
-                if(child.properties(data::SpatialReasoner).find<std::string>("AauSpatialReasoner")>=0 && child.properties(data::Str[data::PublishTf]).getValue<bool>())
+                if(child.properties(data::DiscreteReasoner).find<std::string>("AauSpatialReasoner")>=0
+                        && child.properties(data::Str[data::PublishTf]).getValue<bool>())
                 {
                     temp.tf = DiscreteReasoner::getData<tf::Transform>(child, "Transform");
                     try

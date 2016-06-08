@@ -54,6 +54,7 @@ int Drive::preSense()
     std::vector<skiros_wm::Element> v = getWorldHandle()->getChildElements(mobile_base_, relation::Str[relation::robotAt]);
     if(v.size()==0) //FIXME: this should never happen
     {
+        setProgress("[ERROR] Initial location not found!");
         skiros_wm::Element fake(concept::Str[concept::Location]);
         fake.label() = getWorldHandle()->getRobot().properties(relation::Str[relation::hasStartLocation]).getValue<std::string>();
         v = getWorldHandle()->resolveElement(fake);

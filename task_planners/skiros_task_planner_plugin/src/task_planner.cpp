@@ -83,6 +83,7 @@ namespace skiros_task
             clearTask();
             for(Element s : plan)
             {
+                FINFO("Adding: " << s.printState("", false));
                 insertSkillInSequence(getSkillMgr(s), s.label(), s.properties());
             }
             getTaskManager()->endModifingTask();
