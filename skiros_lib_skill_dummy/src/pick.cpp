@@ -79,8 +79,13 @@ int Pick::preSense()
     arm_ = getParamHandle()->getParamValue<skiros_wm::Element>("Arm");
 
     /// Robot
-    auto robot = getWorldHandle()->getRobot();
-    getParamHandle()->specify("Robot", robot);
+    auto robot = getParamHandle()->getParamValue<skiros_wm::Element>("Robot");
+
+    if(robot.id()<=0)
+    {
+        auto robot = getWorldHandle()->getRobot();
+        getParamHandle()->specify("Robot", robot);
+    }
 
     /// Gripper
     v = getWorldHandle()->getChildElements(arm_.id(), "", concept::Str[concept::Gripper]);
@@ -107,37 +112,39 @@ int Pick::preSense()
 
     ///Get container
     container_ = this->getParamHandle()->getParamValue<skiros_wm::Element>("Container");
-    container_ = getWorldHandle()->getElement(container_.id());//TODO: this update should be automated. TOFIX
 
-    std::string container_frame = container_.properties("FrameId").getValue<std::string>();
-    std::set<std::string> rel = robot.getRelationsWrt(container_, "AauSpatialReasoner");
+    if(container_.hasProperty("FrameId"))
+    {
+        std::string container_frame = container_.properties("FrameId").getValue<std::string>();
+        std::set<std::string> rel = robot.getRelationsWrt(container_, "AauSpatialReasoner");
 
-    if (rel.find("left")!=rel.end())
-    {
-        setProgress("Box on the left - using left camera");
-        for(Element e : v)
+        if (rel.find("left")!=rel.end())
         {
-            if(e.label()=="top_left_camera")
-                camera_up_ = e;
+            setProgress("Box on the left - using left camera");
+            for(Element e : v)
+            {
+                if(e.label()=="top_left_camera")
+                    camera_up_ = e;
+            }
         }
-    }
-    else if(rel.find("right")!=rel.end())
-    {
-        setProgress("Box on the right - using right camera");
-        for(Element e : v)
+        else if(rel.find("right")!=rel.end())
         {
-            if(e.label()=="top_right_camera")
-                camera_up_ = e;
+            setProgress("Box on the right - using right camera");
+            for(Element e : v)
+            {
+                if(e.label()=="top_right_camera")
+                    camera_up_ = e;
+            }
         }
-    }
-    else
-    {
-        //If container or robot has no pose... hardcoded solution
-        setProgress("Can't estimate the box pose - using right camera");
-        for(Element e : v)
+        else
         {
-            if(e.label()=="top_right_camera")
-                camera_up_ = e;
+            //If container or robot has no pose... hardcoded solution
+            setProgress("Can't estimate the box pose - using right camera");
+            for(Element e : v)
+            {
+                if(e.label()=="top_right_camera")
+                    camera_up_ = e;
+            }
         }
     }
 

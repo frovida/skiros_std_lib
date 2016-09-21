@@ -21,23 +21,11 @@ Drive::Drive()
     // 1. parameter is the object to grasp
     getParamHandle()->addParamWithDefaultValue("TargetLocation",skiros_wm::Element(concept::Str[concept::Location]), "Target object to drive to", skiros_common::online);
     getParamHandle()->addParamWithDefaultValue("Robot",skiros_wm::Element(concept::Str[concept::Agent]), "Robot to move", skiros_common::hardware);
-    ////////////////////////////////////////////////////////
-    // Define planning parameters
-    ////////////////////////////////////////////////////////
-    //getParamHandle()->addParamWithDefaultValue("StartLocation",skiros_wm::Element(concept::Str[concept::Location]), "Starting location", skiros_common::planning);
 
 }
 
 bool Drive::onInit()
 {
-    ////////////////////////////////////////////////////////
-    // Define the pre conditions
-    ////////////////////////////////////////////////////////
-    //addPrecondition(newCondition("RobotAtLocation", true, "Robot", "StartLocation"));//Redundant, for planning
-    ////////////////////////////////////////////////////////
-    // Define the post conditions
-    ////////////////////////////////////////////////////////
-    //addPostcondition("NotAtStart", newCondition("RobotAtLocation", false, "Robot",  "StartLocation"));
     addPostcondition("AtTarget", newCondition("RobotAtLocation", true, "Robot", "TargetLocation"));
     return true;
 }

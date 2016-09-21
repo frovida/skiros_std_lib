@@ -62,7 +62,7 @@ bool Place::onInit()
     ////////////////////////////////////////////////////////
 
     addPrecondition(newCondition("Holding", true, "Gripper", "ObjectInHand"));
-    addPrecondition(newCondition("Carrying", true, "Robot", "PlacingKit"));
+    //addPrecondition(newCondition("Carrying", true, "Robot", "PlacingKit"));
     addPrecondition(newCondition("FitsIn", true, "PlacingCell", "ObjectInHand"));
     addPrecondition(newCondition("LocationEmpty", true, "PlacingCell"));
     addPrecondition(newCondition("CellInKit", true, "PlacingKit", "PlacingCell"));
