@@ -166,6 +166,23 @@ namespace skiros_reasoner
           e.properties(data::Orientation).setAllValues(v);
           return true;
       }
+      else if(set_code=="StampedPose" && any.type() == typeid(tf::Stamped<tf::Pose>))
+      {
+          auto p = boost::any_cast<tf::Stamped<tf::Pose> >(any);
+          std::vector<double> v;
+          v.push_back(p.getOrigin().getX());
+          v.push_back(p.getOrigin().getY());
+          v.push_back(p.getOrigin().getZ());
+          e.properties(data::Position).setAllValues(v);
+          v.clear();
+          v.push_back(p.getRotation().getX());
+          v.push_back(p.getRotation().getY());
+          v.push_back(p.getRotation().getZ());
+          v.push_back(p.getRotation().getW());
+          e.properties(data::Orientation).setAllValues(v);
+          e.properties(data::BaseFrameId).setValue(p.frame_id_);
+          return true;
+      }
       else if(set_code=="PoseMsg" && any.type() == typeid(geometry_msgs::Pose))
       {
           geometry_msgs::Pose pm = boost::any_cast<geometry_msgs::Pose>(any);
@@ -249,6 +266,18 @@ namespace skiros_reasoner
             pose.setOrigin(tf::Vector3(v[0], v[1], v[2]));
             v = e.properties(data::Orientation).getValues<double>();
             pose.setRotation(tf::Quaternion(v[0], v[1], v[2], v[3]));
+            return boost::any(pose);
+        }
+        else if(get_code=="StampedPose" &&
+                e.properties(data::Position).isSpecified() &&
+                e.properties(data::Orientation).isSpecified())
+        {
+            tf::Stamped<tf::Pose> pose;
+            std::vector<double> v = e.properties(data::Position).getValues<double>();
+            pose.setOrigin(tf::Vector3(v[0], v[1], v[2]));
+            v = e.properties(data::Orientation).getValues<double>();
+            pose.setRotation(tf::Quaternion(v[0], v[1], v[2], v[3]));
+            pose.frame_id_ = e.properties(data::BaseFrameId).getValue<std::string>();
             return boost::any(pose);
         }
         else if(get_code=="PoseMsg" &&
