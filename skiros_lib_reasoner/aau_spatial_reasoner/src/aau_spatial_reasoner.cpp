@@ -180,6 +180,7 @@ namespace skiros_reasoner
           v.push_back(p.getRotation().getZ());
           v.push_back(p.getRotation().getW());
           e.properties(data::Orientation).setAllValues(v);
+          if(!e.hasProperty(data::BaseFrameId)) e.addPropertyString(data::BaseFrameId, "");
           e.properties(data::BaseFrameId).setValue(p.frame_id_);
           return true;
       }
@@ -215,6 +216,26 @@ namespace skiros_reasoner
           v.push_back(p.getRotation().getZ());
           v.push_back(p.getRotation().getW());
           e.properties(data::Orientation).setAllValues(v);
+          return true;
+      }
+      else if(set_code=="TransformStampedMsg" && any.type() == typeid(geometry_msgs::TransformStamped))
+      {
+          auto pm = boost::any_cast<geometry_msgs::TransformStamped >(any);
+          tf::StampedTransform p;
+          std::vector<double> v;
+          tf::transformStampedMsgToTF(pm, p);
+          v.push_back(p.getOrigin().getX());
+          v.push_back(p.getOrigin().getY());
+          v.push_back(p.getOrigin().getZ());
+          e.properties(data::Position).setAllValues(v);
+          v.clear();
+          v.push_back(p.getRotation().getX());
+          v.push_back(p.getRotation().getY());
+          v.push_back(p.getRotation().getZ());
+          v.push_back(p.getRotation().getW());
+          e.properties(data::Orientation).setAllValues(v);
+          if(!e.hasProperty(data::BaseFrameId)) e.addPropertyString(data::BaseFrameId, "");
+          e.properties(data::BaseFrameId).setValue(p.frame_id_);
           return true;
       }
       else if(set_code=="BaseFrame" && any.type() == typeid(std::string))
