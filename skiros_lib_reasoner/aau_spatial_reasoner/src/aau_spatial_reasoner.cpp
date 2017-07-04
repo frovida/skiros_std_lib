@@ -218,6 +218,24 @@ namespace skiros_reasoner
           e.properties(data::Orientation).setAllValues(v);
           return true;
       }
+      else if(set_code=="TransformStamped" && any.type() == typeid(tf::StampedTransform))
+      {
+          auto p = boost::any_cast<tf::StampedTransform>(any);
+          std::vector<double> v;
+          v.push_back(p.getOrigin().getX());
+          v.push_back(p.getOrigin().getY());
+          v.push_back(p.getOrigin().getZ());
+          e.properties(data::Position).setAllValues(v);
+          v.clear();
+          v.push_back(p.getRotation().getX());
+          v.push_back(p.getRotation().getY());
+          v.push_back(p.getRotation().getZ());
+          v.push_back(p.getRotation().getW());
+          e.properties(data::Orientation).setAllValues(v);
+          if(!e.hasProperty(data::BaseFrameId)) e.addPropertyString(data::BaseFrameId, "");
+          e.properties(data::BaseFrameId).setValue(p.frame_id_);
+          return true;
+      }
       else if(set_code=="TransformStampedMsg" && any.type() == typeid(geometry_msgs::TransformStamped))
       {
           auto pm = boost::any_cast<geometry_msgs::TransformStamped >(any);
