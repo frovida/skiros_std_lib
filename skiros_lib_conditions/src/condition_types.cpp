@@ -318,18 +318,22 @@ namespace condition
 
         ~FitsIn(){}
 
+        //True if container.partReference==object.label or if exist a placing pose associated to container and object
         bool evaluate()
         {
             setPropertyValue();
             std::string to_query;
-            skiros_wm::Element temp = wm_->getDefaultElement(property_value_);
-            to_query = "SELECT ?x WHERE { ?x rdf:type stmn:PlacingPose. ?x stmn:AssociatedClass '"+temp.type()+"'^^xsd:string. ?x stmn:AssociatedClass '"+getSubject().type()+"'^^xsd:string. }";
+            skiros_wm::Element object = wm_->getDefaultElement(property_value_);
+            to_query = "SELECT ?x WHERE { ?x rdf:type stmn:PlacingPose. ?x stmn:AssociatedClass '"+object.type()+"'^^xsd:string. ?x stmn:AssociatedClass '"+getSubject().type()+"'^^xsd:string. }";
             //FINFO(to_query);
-            std::stringstream ss(wm_->queryOntology(to_query));
+            auto placing_poses = wm_->makeSet(wm_->queryOntology(to_query));
+            std::vector<std::string> partReferences;
+            if(getSubject().hasProperty("partReference"))
+                partReferences = getSubject().properties("partReference").getValues<std::string>();
+            std::vector<std::string>::iterator it;
+            it = find (partReferences.begin(), partReferences.end(), object.label());
             //FINFO(ss.str());
-            std::string placing_pose;
-            ss >> placing_pose;
-            if(!ss.eof() && placing_pose!="")
+            if(placing_poses.size()>0 || it!=partReferences.end())
                 if(getDesiredState()) ConditionProperty::set();
             else
                 if(!getDesiredState()) ConditionProperty::set();
